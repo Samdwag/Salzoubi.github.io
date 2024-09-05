@@ -32,6 +32,7 @@
             height: 150px;
             border-radius: 50%;
             margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
@@ -60,8 +61,9 @@
             border-bottom: 2px solid #563b94;
         }
         p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             margin: 10px 0;
+            line-height: 1.6;
         }
         ul {
             list-style-type: square;
@@ -75,25 +77,38 @@
             text-decoration: none;
         }
         a:hover {
+            color: #ff69b4;
             text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="me.png" alt="Sami Alzoubi">
+            <img src="me.png" alt="Sami">
             <h1>Sami Alzoubi</h1>
             <h2>Preferred Name: Sami or Sam</h2>
             <div class="contact-info">
                 <p><a href="mailto:sami.alzoubi@lewisu.edu">samialzoubi@lewisu.edu</a></p>
-                <p>Discord: strangersz</p>
+                <p>Discord: <span id="discord">strangersz</span></p>
             </div>
         </header>
 
         <section class="introduction">
             <h2>Introduction</h2>
-            <p>Hello! I'm Sami, currently a senior at Lewis University, majoring in Computer Science with a concentration in Game Development. I'm passionate about creating games and have started my own game development company called Sam's Development Studios. I love spending time with my family, working on new game ideas, and exploring new technologies.</p>
+            <p>Hello! I'm Sami, currently a senior at Lewis University, majoring in Computer Science with a concentration in Game Development. I'm passionate about creating games and have started my own game development company called Sam's Development Studios. I love spending time with my family, working on new game ideas, and working out.</p>
         </section>
 
         <section class="course">
@@ -113,12 +128,12 @@
                 <li>Working out</li>
                 <li>Playing video games</li>
             </ul>
-            <p>I really like living on the edge and doing anything that has a little danger to it"</p>
+            <p>I really like living on the edge and doing anything that has a little danger to it.</p>
         </section>
 
         <section class="fun-fact">
             <h2>Fun Fact</h2>
-            <p>A unique fact about me is that I livedd in Dubai for 7 years. This experience gave me a deep appreciation for different cultures and global perspectives.</p>
+            <p>A unique fact about me is that I lived in Dubai for 7 years. This experience gave me a deep appreciation for different cultures and global perspectives.</p>
         </section>
     </div>
 </body>
